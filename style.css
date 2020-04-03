@@ -1,0 +1,38 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #BB2CD9;}
+
+.container{
+	position:relative;
+	width:360px;
+	height:640px;
+	background-color: #333945;
+	border-radius: 50px;
+	transform: rotate(-25deg) skew(25deg);
+	transition: 0.5s;
+}
+.container img{
+	position :absolute;
+	width:360px;
+	height: 640px;
+	transition: 0.5s;
+}
+
+.container:hover  img:nth-child(4){
+	transform:translate(120px , -120px);
+	opacity:1;
+}
+.container:hover  img:nth-child(3){
+	transform:translate(80px , -80px);
+	opacity:0.8;
+}
+.container:hover  img:nth-child(2){
+	transform:translate(50px , -50px);
+	opacity:0.6;
+}
+.container:hover  img:nth-child(1){
+	transform:translate(30px , -30px);
+	opacity:0.4;
+}
